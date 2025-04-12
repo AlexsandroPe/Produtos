@@ -11,7 +11,7 @@ export default function () {
         
         <Text style={{fontSize: 28, fontWeight: "500"}}>Carrinho</Text>
         
-        <ProductCard  name={"Nordic Step"} image={require("../../assets/produtos/cadeiraMato.png")} activeIcon={true}  price="R$759,20" />
+        <ProductCard  name={"Nordic Step"} image={require("../../assets/produtos/cadeiraMato.png")} activeIcon={true} description={"Feita com madeira tailandesa e importada da Tailândia"}  price="R$759,20" />
       </View>
     </SafeAreaView>
   );
