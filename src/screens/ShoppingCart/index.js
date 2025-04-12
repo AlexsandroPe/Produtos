@@ -5,7 +5,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function () {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+  
+    <SafeAreaView style={{ flex: 1,   backgroundColor: "rgba(178, 201, 209, 0.77)",}}>
       <Text style={{fontSize: 28, fontWeight: "700", alignSelf: "center"}}>SitUCool</Text>
       <View style={{ flex: 1, gap: 20, padding: 10}}>
         
