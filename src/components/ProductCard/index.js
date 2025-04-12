@@ -6,7 +6,13 @@ import { useState } from "react";
 
 import { useNavigation } from "@react-navigation/native";
 
-export function ProductCard({ image, activeIcon, price, name}) {
+export function ProductCard({
+  image,
+  activeIcon,
+  activeCarrinho,
+  price,
+  name,
+}) {
   const navigation = useNavigation();
   const [liked, setLike] = useState("rgb(0, 0, 0)");
   return (
@@ -22,7 +28,6 @@ export function ProductCard({ image, activeIcon, price, name}) {
           width: "100%",
           gap: 20,
           alignItems: "center",
-        
         }}>
         <TouchableOpacity
           style={Styles.cardButton}
@@ -31,13 +36,15 @@ export function ProductCard({ image, activeIcon, price, name}) {
           <Text style={Styles.cardButtonTitle}>Ver Mais</Text>
         </TouchableOpacity>
 
-       { activeIcon ? (<TouchableOpacity
-          onPress={() => {
-            liked === "red" ? setLike("rgb(0, 0, 0") : setLike("red");
-          }}
-          activeOpacity={0.8}>
-          <Ionicons name="heart-outline" color={liked} size={33} />
-        </TouchableOpacity>) : null}
+        {activeIcon ? (
+          <TouchableOpacity
+            onPress={() => {
+              liked === "red" ? setLike("rgb(0, 0, 0") : setLike("red");
+            }}
+            activeOpacity={0.8}>
+            <Ionicons name="cart-outline" color={liked} size={33} />
+          </TouchableOpacity>
+        ) : null}
       </View>
     </View>
   );

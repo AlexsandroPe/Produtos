@@ -41,11 +41,11 @@ export default function BottomTabs() {
       />
 
       <Screen
-        name="shoppingBag"
+        name="shoppingCart"
         component={ShoppingCart}
         options={{
           tabBarIcon: ({ color, size }) => {
-            return <Ionicons name="bag-outline" size={28} color={color} />
+            return <Ionicons name="cart-outline" size={28} color={color} />
           },
           tabBarBadge: "1",
         }}
