@@ -9,7 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 export function ProductCard({
   image,
   activeIcon,
-  activeCarrinho,
+  description,
   price,
   name,
 }) {
@@ -32,7 +32,7 @@ export function ProductCard({
         <TouchableOpacity
           style={Styles.cardButton}
           activeOpacity={0.8}
-          onPress={() => navigation.navigate("ProductInfo", {productImage: image})}>
+          onPress={() => navigation.navigate("ProductInfo", {productImage: image, productName: name, productPrice: price, productDescription: description})}>
           <Text style={Styles.cardButtonTitle}>Ver Mais</Text>
         </TouchableOpacity>
 

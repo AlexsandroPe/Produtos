@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react"
 import { Styles } from "./styles";
-export default function ProductInfoScreen({route,}) {
+export default function ProductInfoScreen({route}) {
 
       const [liked, setLike ] = useState("rgb(0, 0, 0)")
   return (
@@ -16,15 +16,15 @@ export default function ProductInfoScreen({route,}) {
         </Text>
         <View style={Styles.product}>
           <Image
-            source={route.params?.productImage}
+            source={route.params.productImage}
             style={Styles.productImage}
           />
 
           <View style={Styles.info}>
             <View style={Styles.nameAndDescription}>
-              <Text style={Styles.title}>Nordic Step</Text>
+              <Text style={Styles.title}>{route.params.productName}</Text>
               <Text style={Styles.description}>
-                Feita com madeira tailandesa e importada da Tailândia
+                {route.params.productDescription}
               </Text>
             </View>
             <View style={Styles.priceAndIcon}>
@@ -35,7 +35,7 @@ export default function ProductInfoScreen({route,}) {
                   fontSize: 26,
                   fontWeight: 600,
                 }}>
-              R$759,20
+                  {route.params.productPrice}
               </Text>
               <TouchableOpacity onPress={() => { liked === "red" ? setLike("rgb(0, 0, 0") : setLike("red")}} activeOpacity={0.8}> 
                     <Ionicons name="heart-outline" color={liked} size={33} />
