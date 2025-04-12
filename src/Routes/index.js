@@ -10,7 +10,7 @@ export default function Routes() {
 
     <Navigator>
       <Screen name="Login" component={Login} options={{headerShown: false}}/>
-      <Screen name="Home" component={BottomTabs} options={{headerShown: false}}/>
+      <Screen name="HomeScreen" component={BottomTabs} options={{headerShown: false}}/>
       <Screen name="ProductInfo" component={ProductInfoScreen}/>
     </Navigator>
   )

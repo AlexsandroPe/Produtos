@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react"
 import { Styles } from "./styles";
-export default function ProductInfoScreen() {
+export default function ProductInfoScreen({route,}) {
 
       const [liked, setLike ] = useState("rgb(0, 0, 0)")
   return (
@@ -16,7 +16,7 @@ export default function ProductInfoScreen() {
         </Text>
         <View style={Styles.product}>
           <Image
-            source={require("../../assets/produtos/cadeiraMatoInfopng.png")}
+            source={route.params?.productImage}
             style={Styles.productImage}
           />
 

@@ -16,7 +16,7 @@ export default function Login() {
   const navigation = useNavigation();
 
   const handleNav = () => {
-    navigation.navigate("Home");
+    navigation.navigate("HomeScreen");
     setuserName("");
   };
 

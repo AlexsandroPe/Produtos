@@ -32,7 +32,7 @@ export function ProductCard({
         <TouchableOpacity
           style={Styles.cardButton}
           activeOpacity={0.8}
-          onPress={() => navigation.navigate("ProductInfo")}>
+          onPress={() => navigation.navigate("ProductInfo", {productImage: image})}>
           <Text style={Styles.cardButtonTitle}>Ver Mais</Text>
         </TouchableOpacity>
 
