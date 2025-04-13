@@ -34,55 +34,56 @@ export default function Home() {
                 justifyContent: "center",
                 rowGap: 10,
                 columnGap: 10,
+                padding: 8,
               }}>
               <ProductCard
-                name={"Noir Slim"}
+                name={"Banco Álamo"}
                 image={require("../../assets/produtos/banquinhoWhite.png")}
                 activeIcon={true}
                 price="R$865,33"
-                description={"Feita com madeira alemã e acabamento italiano, ideal para ambientes modernos."}
+                description={"Design minimalista em madeira nobre, perfeito para compor ambientes modernos."}
               />
               <ProductCard
-                name={"Nordic Step"}
+                name={"Pampa"}
                 image={require("../../assets/produtos/cadeiraMato.png")}
                 activeIcon={true}
                 price="R$759,20"
-                description={"Feita com madeira tailandesa e importada da Tailândia"}
+                description={"Feita com madeira tailandesa e importada da Tailândia. Inspirado no campo, une simplicidade e charme rústico."}
 
               />
               <ProductCard
-                name={"Rustico Verde"}
+                name={"Valverde"}
                 image={require("../../assets/produtos/cadeiraFofaDois.png")}
                 activeIcon={true}
                 price="R$122,56"
-                description={"Feita com madeira de reflorestamento e acabamento natural, inspirada no campo italiano"}
+                description={"Estofada com veludo francês e estrutura em madeira de lei, importada da França."}
 
               />
               <ProductCard
-                name={"Sunset Queen"}
+                name={"Cadeira Eclipse"}
                 image={require("../../assets/produtos/cadeiraEscritorio.png")}
                 activeIcon={true}
                 price="R$444,90"
-                description={"Estofada com veludo francês e estrutura em madeira de lei, importada da França."
+                description={"Elegância e conforto em uma peça com visual moderno e sofisticado."
 
 }
 
               />
               <ProductCard
-                name={"Vintage Lord"}
+                name={"Poltrona Solaris"}
                 image={require("../../assets/produtos/cadeiraAmarela.png")}
                 activeIcon={true}
                 price="R$824,42"
-                description={"Construída com madeira nobre reciclada e detalhes artesanais, direto da Inglaterra"}
+                description={"Estilo clássico e robusto, perfeita para quem busca imponência e conforto"}
 
               />
 
               <ProductCard
-                name={"Soft Spin"}
+                name={"Antares"}
                 image={require("../../assets/produtos/cadeiraExperiente.png")}
                 activeIcon={true}
                 price="R$2.800,00"
-                description={"Base giratória em aço inoxidável e estofado premium, desenhada na Suécia"}
+                description={"Madeira maciça e design retrô, direto da Inglaterra"}
               />
             </View>
           </ScrollView>
